@@ -1,0 +1,143 @@
+.container {
+  .deleteEntriesButton {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid red;
+    background-color: red;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      color: red;
+    }
+  }
+
+  .containerNoEntries {
+    border: solid red 1px;
+    width: 100%;
+  }
+  .containerPaginationIndicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .containerPageIndicator {
+      text-align: left;
+      span {
+        font-weight: bold;
+      }
+    }
+    .containerShowSelect {
+      text-align: right;
+      .showSelect {
+        padding: 0.5rem;
+        height: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .arrow {
+    margin-left: 0.5rem;
+    color: white;
+    background-color: #97ba16;
+    border-radius: 4px;
+    padding: 0.5rem;
+  }
+
+  .containerInput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-left: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    label {
+      color: #97ba16;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+
+    @media (max-width: 992px) {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    &::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+      background-color: #ccc;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #97ba16;
+      border-radius: 4px;
+    }
+
+    scrollbar-color: #97ba16 #ccc;
+  }
+
+  th,
+  td {
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+
+  th {
+    cursor: pointer;
+  }
+
+  .containerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1rem;
+
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+
+    button {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+      background-color: #97ba16;
+      color: #fff;
+
+      &:hover {
+        background-color: #fff;
+        color: #97ba16;
+      }
+
+      &:disabled {
+        background-color: #ccc;
+        color: #fff;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

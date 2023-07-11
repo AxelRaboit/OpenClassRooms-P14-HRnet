@@ -1,0 +1,58 @@
+.containerGenerateEmployees {
+
+  margin : 2rem auto;
+
+  button {
+    padding: 0.5rem;
+    border: 1px solid #97ba16;
+    border-radius: 4px;
+    background-color: #97ba16;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+.container {
+  margin: 2rem auto;
+  
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+
+  .formContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #97ba16;
+    border-radius: 5px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .formSubmit {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #97ba16;
+      border-radius: 4px;
+      background-color: #97ba16;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fff;
+        color: #97ba16;
+      }
+    }
+  }
+}

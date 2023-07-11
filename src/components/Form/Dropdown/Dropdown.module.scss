@@ -1,0 +1,13 @@
+.container {
+  text-align: left;
+
+  .containerLabel {
+    text-align: left;
+    margin-bottom: 0.5rem;
+
+    label {
+      color: #97ba16;
+      font-weight: bold;
+    }
+  }
+}
