@@ -13,6 +13,7 @@ body {
 }
 
 #root {
+  position: relative;
   border-radius: 10px;
   width: 1280px;
   min-height: 1280px;

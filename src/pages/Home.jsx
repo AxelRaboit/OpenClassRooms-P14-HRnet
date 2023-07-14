@@ -113,7 +113,15 @@ export const Home = () => {
     <>
       <Topbar page="View Employees" link="/employees" />
 
-      {modal && <Modal text={modalText} />}
+      {modal &&
+        <Modal
+          messageMainText={modalText}
+          messageMainColor={'#ffffff'}
+          messageSecondText={'Click anywhere to close'}
+          messageSecondColor={'#ffffff'}
+          modalBackgroundColor={'#97ba16'}
+        />
+      }
 
       <div className={style.container}>
         <h1>Create Employee</h1>
