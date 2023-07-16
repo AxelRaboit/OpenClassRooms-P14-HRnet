@@ -120,6 +120,8 @@ export const Home = () => {
           messageSecondText={'Click anywhere to close'}
           messageSecondColor={'#ffffff'}
           modalBackgroundColor={'#97ba16'}
+          modalWidth={'600px'}
+          closeButton={true}
         />
       }
 
