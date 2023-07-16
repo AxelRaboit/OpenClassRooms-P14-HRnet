@@ -10,25 +10,25 @@ export const Modal = ({
     modalWidth,
     closeButton,
 }) => {
-    const [messageMainData, setMessageMainData] = useState(
+    const [messageMainData] = useState(
         messageMainText || "Success!"
     );
-    const [messageMainColorData, setMessageMainColorData] = useState(
+    const [messageMainColorData] = useState(
         messageMainColor || "#ffffff"
     );
 
-    const [messageSecondTextData, setMessageSecondTextData] = useState(
+    const [messageSecondTextData] = useState(
         messageSecondText || null
     );
-    const [messageSecondColorData, setMessageSecondColorData] = useState(
+    const [messageSecondColorData] = useState(
         messageSecondColor || "#ffffff"
     );
 
-    const [modalBackgroundColorData, setModalBackgroundColorData] = useState(
+    const [modalBackgroundColorData] = useState(
         modalBackgroundColor || "#1289c9"
     );
 
-    const [closeButtonData, setCloseButtonData] = useState(closeButton || false);
+    const [closeButtonData] = useState(closeButton || false);
 
     const [modalWidthData, setModalWidthData] = useState(modalWidth || "600px");
 
