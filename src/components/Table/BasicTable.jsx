@@ -92,9 +92,11 @@ export const BasicTable = ({ dataTable }) => {
   return (
     <div className={style.container}>
       {table.getRowModel().rows.length > 0 && (
-        <button className={style.deleteEntriesButton} onClick={handleDeleteEmployees}>
-          Delete employees
-        </button>
+        <div className={style.containerDeleteEntriesButton}>
+          <button className={style.deleteEntriesButton} onClick={handleDeleteEmployees}>
+            Delete employees
+          </button>
+        </div>
       )}
       <div className={style.containerPaginationIndicator}>
         <div className={style.containerShowSelect}>
