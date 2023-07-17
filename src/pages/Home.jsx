@@ -115,13 +115,14 @@ export const Home = () => {
 
       {modal &&
         <Modal
-          messageMainText={modalText}
-          messageMainColor={'#ffffff'}
-          messageSecondText={'Click anywhere to close'}
-          messageSecondColor={'#ffffff'}
           modalBackgroundColor={'#97ba16'}
-          modalWidth={'600px'}
-          closeButton={true}
+          modalTextColor={'#fff'}
+          modalMaxWidth={'600px'}
+          children={
+            <div>
+              <h3>{modalText}</h3>
+            </div>
+          }
         />
       }
 

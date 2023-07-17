@@ -2,54 +2,47 @@ import React, { useState } from "react";
 import style from "./Modal.module.scss";
 
 export const Modal = ({
-    messageMainText,
-    messageMainColor,
-    messageSecondText,
-    messageSecondColor,
     modalBackgroundColor,
-    modalWidth,
+    modalTextColor,
+    modalMinWidth,
+    modalMaxWidth,
     closeButton,
+    children
 }) => {
-    const [messageMainData] = useState(
-        messageMainText || "Success!"
-    );
-    const [messageMainColorData] = useState(
-        messageMainColor || "#ffffff"
-    );
-
-    const [messageSecondTextData] = useState(
-        messageSecondText || null
-    );
-    const [messageSecondColorData] = useState(
-        messageSecondColor || "#ffffff"
-    );
 
     const [modalBackgroundColorData] = useState(
         modalBackgroundColor || "#1289c9"
     );
 
-    const [closeButtonData] = useState(closeButton || false);
-
-    const [modalWidthData, setModalWidthData] = useState(modalWidth || "600px");
+    const [closeButtonData] = useState(closeButton || true);
 
     const [isModalVisible, setIsModalVisible] = useState(true);
+
+    const [childrenData] = useState(children || "Succes!");
+
+    const [modalMinWidthData] = useState(modalMinWidth || "");
+
+    const [modalMaxWidthData] = useState(modalMaxWidth || "600px");
+
+    const [modalTextColorData] = useState(modalTextColor || "#fff");
 
     const closeModal = () => {
         setIsModalVisible(false);
     };
 
-    const messageMainColorStyle = {
-        color: messageMainColorData,
-    };
-
-    const messageSecondColorStyle = {
-        color: messageSecondColorData,
-    };
-
     const modalStyle = {
         backgroundColor: modalBackgroundColorData,
-        width: modalWidthData,
+        minWidth: modalMinWidthData,
+        maxWidth: modalMaxWidthData,
     };
+
+    const childrenStyle = {
+        color: modalTextColorData,
+    };
+
+    const closeButtonStyle = {
+        color: modalBackgroundColor,
+    }
 
     return (
         <>
@@ -58,21 +51,14 @@ export const Modal = ({
                     <div className={style.modal} style={modalStyle}>
                         {closeButtonData && (
                             <div className={style.containerClose}>
-                                <button onClick={closeModal}>
-                                    <i className="fa-solid fa-xmark"></i>
+                                <button onClick={closeModal} style={closeButtonStyle}>
+                                    <span>&times;</span>
                                 </button>
                             </div>
                         )}
-                        <div className={style.containerMessageMain}>
-                            <p style={messageMainColorStyle}>
-                                {messageMainData}
-                            </p>
-                        </div>
-                        {messageSecondTextData && (
-                            <div className={style.containerMessageSecond}>
-                                <p style={messageSecondColorStyle}>
-                                    {messageSecondTextData}
-                                </p>
+                        {childrenData && (
+                            <div className={style.containerChildren} style={childrenStyle}>
+                                {childrenData}
                             </div>
                         )}
                     </div>
