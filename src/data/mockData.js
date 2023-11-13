@@ -1,7 +1,7 @@
 const mockData = [
   {
     id: 1,
-    birthDate: '03/11/1992',
+    birthDate: '11/03/1992',
     city: 'New York',
     department: 'sales',
     firstName: 'Jack',
@@ -13,7 +13,7 @@ const mockData = [
   },
   {
     id: 2,
-    birthDate: '14/03/1995',
+    birthDate: '03/14/1995',
     city: 'San Diego',
     department: 'engineering',
     firstName: 'Alexandra',
@@ -25,7 +25,7 @@ const mockData = [
   },
   {
     id: 3,
-    birthDate: '10/09/1988',
+    birthDate: '09/10/1988',
     city: 'New York',
     department: 'sales',
     firstName: 'Christopher',
@@ -37,7 +37,7 @@ const mockData = [
   },
   {
     id: 4,
-    birthDate: '27/06/1993',
+    birthDate: '06/27/1993',
     city: 'Los Angeles',
     department: 'marketing',
     firstName: 'Jessica',
@@ -49,7 +49,7 @@ const mockData = [
   },
   {
     id: 5,
-    birthDate: '02/11/1990',
+    birthDate: '11/02/1990',
     city: 'Chicago',
     department: 'engineering',
     firstName: 'Matthew',
@@ -61,7 +61,7 @@ const mockData = [
   },
   {
     id: 6,
-    birthDate: '18/07/1994',
+    birthDate: '07/18/1994',
     city: 'Houston',
     department: 'sales',
     firstName: 'Sarah',
@@ -85,7 +85,7 @@ const mockData = [
   },
   {
     id: 8,
-    birthDate: '25/09/1993',
+    birthDate: '09/25/1993',
     city: 'Dallas',
     department: 'engineering',
     firstName: 'Jessica',
@@ -121,7 +121,7 @@ const mockData = [
   },
   {
     id: 11,
-    birthDate: '19/11/1987',
+    birthDate: '11/03/1987',
     city: 'Las Vegas',
     department: 'marketing',
     firstName: 'Michael',
@@ -157,7 +157,7 @@ const mockData = [
   },
   {
     id: 14,
-    birthDate: '22/11/1989',
+    birthDate: '11/22/1989',
     city: 'Austin',
     department: 'marketing',
     firstName: 'Maria',
@@ -169,7 +169,7 @@ const mockData = [
   },
   {
     id: 15,
-    birthDate: '14/06/1993',
+    birthDate: '06/14/1993',
     city: 'Boston',
     department: 'engineering',
     firstName: 'David',
@@ -181,7 +181,7 @@ const mockData = [
   },
   {
     id: 16,
-    birthDate: '29/08/1991',
+    birthDate: '08/29/1991',
     city: 'Orlando',
     department: 'sales',
     firstName: 'Jessica',
@@ -217,7 +217,7 @@ const mockData = [
   },
   {
     id: 19,
-    birthDate: '26/03/1988',
+    birthDate: '03/26/1988',
     city: 'Miami',
     department: 'sales',
     firstName: 'Olivia',
@@ -253,7 +253,7 @@ const mockData = [
   },
   {
     id: 22,
-    birthDate: '18/11/1990',
+    birthDate: '11/18/1990',
     city: 'New York',
     department: 'sales',
     firstName: 'Emma',
@@ -265,7 +265,7 @@ const mockData = [
   },
   {
     id: 23,
-    birthDate: '29/03/1989',
+    birthDate: '03/29/1989',
     city: 'Los Angeles',
     department: 'marketing',
     firstName: 'Jacob',
@@ -289,7 +289,7 @@ const mockData = [
   },
   {
     id: 25,
-    birthDate: '22/06/1991',
+    birthDate: '03/22/1991',
     city: 'Houston',
     department: 'sales',
     firstName: 'Noah',
@@ -313,7 +313,7 @@ const mockData = [
   },
   {
     id: 27,
-    birthDate: '19/09/1993',
+    birthDate: '02/19/1993',
     city: 'Dallas',
     department: 'engineering',
     firstName: 'William',
@@ -325,7 +325,7 @@ const mockData = [
   },
   {
     id: 28,
-    birthDate: '27/02/1992',
+    birthDate: '01/27/1992',
     city: 'Miami',
     department: 'sales',
     firstName: 'Mia',
@@ -337,7 +337,7 @@ const mockData = [
   },
   {
     id: 29,
-    birthDate: '14/07/1987',
+    birthDate: '07/14/1987',
     city: 'Denver',
     department: 'engineering',
     firstName: 'Ethan',
@@ -361,7 +361,7 @@ const mockData = [
   },
   {
     id: 31,
-    birthDate: '26/04/1990',
+    birthDate: '04/26/1990',
     city: 'Seattle',
     department: 'sales',
     firstName: 'Liam',
@@ -385,7 +385,7 @@ const mockData = [
   },
   {
     id: 33,
-    birthDate: '25/11/1990',
+    birthDate: '11/25/1990',
     city: 'Washington D.C.',
     department: 'marketing',
     firstName: 'Jackson',
@@ -409,7 +409,7 @@ const mockData = [
   },
   {
     id: 35,
-    birthDate: '17/01/1991',
+    birthDate: '03/17/1991',
     city: 'New York',
     department: 'sales',
     firstName: 'Daniel',
@@ -421,7 +421,7 @@ const mockData = [
   },
   {
     id: 36,
-    birthDate: '30/05/1989',
+    birthDate: '05/30/1989',
     city: 'Los Angeles',
     department: 'marketing',
     firstName: 'Emily',
@@ -433,7 +433,7 @@ const mockData = [
   },
   {
     id: 37,
-    birthDate: '14/10/1994',
+    birthDate: '05/14/1994',
     city: 'Chicago',
     department: 'engineering',
     firstName: 'James',
@@ -457,7 +457,7 @@ const mockData = [
   },
   {
     id: 39,
-    birthDate: '16/09/1988',
+    birthDate: '12/16/1988',
     city: 'Phoenix',
     department: 'marketing',
     firstName: 'Alexander',

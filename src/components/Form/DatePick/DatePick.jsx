@@ -3,8 +3,6 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import styled from "styled-components";
 
-const dateFormat = (date) => date.toLocaleDateString("us-US");
-
 /* Styled Component is used because sass module doesn't work for the datepicker style */
 const ContainerStyled = styled.div`
   text-align: left;
@@ -93,6 +91,14 @@ const ContainerStyled = styled.div`
   }
 `;
 
+const dateFormat = (date) => {
+  if (date instanceof Date && !isNaN(date)) {
+    return date.toLocaleDateString("en-US");
+  } else {
+    return "";
+  }
+};
+
 export const DatePick = ({ label, name, selected, onChange, filterDate }) => {
   const handleChange = (date) => {
     onChange(name, dateFormat(date));
@@ -105,7 +111,7 @@ export const DatePick = ({ label, name, selected, onChange, filterDate }) => {
       <label>{label}</label>
       <DatePicker
         selected={selectedDate}
-        dateFormat="dd/MM/yyyy"
+        dateFormat="MM/dd/yyyy"
         onChange={handleChange}
         closeOnScroll={true}
         todayButton="Today"
